@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebApp_Tropeninstitut>
+	<Master_Prompt>Master-Prompt zur Entwicklung der TRAIVEL-App</Master_Prompt>
+
+	<Objective>
+		Ich möchte eine App entwickeln, die die reisemedizinische Beratertätigkeit im Tropeninstitut vollumfassend unterstützt.
+	</Objective>
+
+	<Task>
+		Ich habe den Auftrag, in drei Tagen meinem Chef den Prototypen (MVP) eines solchen Programms vorzustellen. Mir wird bei der Umsetzung (Plattform, Funktionalität, Design, etc.) relativ freie Hand gelassen.
+	</Task>
+
+	<My_Intent>
+		Ich habe die Absicht, in der kurzen verbleibenden Zeit, nicht einen, sondern mehrere MVPs (WebApp zur primären Nutzung auf stationären Desktop Computern im Tropeninstitut) vorzustellen und dafür zunächst (Prototypisierung) ausschließlich KI-basierte Vibecoding-Techniken (Codex, Claude Code, Cursor) zu verwenden. Erst nach der bevorstehenden Präsentation werde ich in einem zweiten Schritt die gesamte Codebasis (eine Datei nach der anderen) in angemessener Tiefe erfassen und manuell optimieren. Daher soll die Dateistruktur nach meinen Vorgaben so angelegt werden, dass ich zu jederzeit den Überblick behalte, welche Funktionalität in welcher Datei und innerhalb der jeweiligen Datei an welcher Stelle abgebildet ist. Die MVPs sollen primär in Deutsch verfasst werden mit der Möglichkeit einer feinteiligen Umstellung aller Element (GUI, Reports, etc.) auf Englisch (i18n). Fürs erste aber geht Schnelligkeit vor "production readiness" (MVP!) aber ganz konsequent mit bereits angelegter Skalierbarkeit hinsichtlich Produktionsreife.
+	</My_Intent>
+
+	<TechStack>
+		<WebApp>
+			<Technology>Next.js mit TypeScript</Technology>
+			<Technology>PostgreSQL</Technology>
+			<Technology>Neon</Technology>
+			<Technology>Drizzle</Technology>
+			<Technology>etc. (suggestions, ChatGPT?)</Technology>
+		</WebApp>
+	</TechStack>
+
+	<Functionality>
+		<Description>
+			Dieser Teil beschreibt die gewünschte Funktionalität der geplanten App auf einem abstrakten Level. Die detaillierte Funktionalität wird für alle Funktionselemente in eigenen Textdateien ausführlich beschrieben, wobei dabei jeweils die hier definierten Attribute "id" und "name" explizit querreferenziert werden.
+		</Description>
+
+		<Structurals>
+			<Structural id="struct1" name="Business Logic">
+				Die Business Logik enthält die medizinische und administrativen Hintergrundinformationen, wie zum Beispiel Impfabstände oder Dosierungen/Dosierungsintervalle, die unter anderem für interne Berechnungen gebraucht werden.
+			</Structural>
+
+			<Structural id="struct2" name="Frontend">
+				Das Frontend ist das grafische User Interface mit all seinen Elementen als wesentlicher Teil der User Experience. Es ist hier auf der obersten Abstraktionsebene für die spätere Referenzierung mit definiert und wird im späteren Entwicklungsprozess im Detail beschrieben. Dabei soll eine Bezugnahme auf alle in diesem Dokument definierten Elemente über "id" und "name" möglich sein.
+			</Structural>
+
+			<Structural id="struct3" name="Database">
+				<Description>
+					Eine relationale Datenbank mit dem Namen "TraivelBase" soll alle CRUD-Prozesse der App bedienen.
+				</Description>
+
+				<Type>PostgreSQL</Type>
+
+				<Tools>
+					<Tool>Drizzle als ORM</Tool>
+					<Tool>Neon als DBMS-Plattform, genauer gesagt als serverloser, vollständig verwalteter PostgreSQL-Datenbankdienst</Tool>
+				</Tools>
+
+				<Datenmodell>tbd.</Datenmodell>
+			</Structural>
+
+			<Structural id="struct4" name="APIs">
+				<API>Klimadaten/historische Wetterdaten</API>
+				<API>LLM (z.B. Open AI, Claude, Gemini)</API>
+				<API>weitere Vorschläge?</API>
+			</Structural>
+		</Structurals>
+
+		<Innerfunctions>
+			<Description>
+				Innerfunctions sind Elemente der Funktionalität der App, die die internen Funktionsabläufe (also wesentliche Teile der User Journey) repräsentieren, aber nicht die finalen Outputs der User Journey.
+			</Description>
+
+			<Innerfunction id="inner1" name="Controlling" />
+			<Innerfunction id="inner2" name="Administration" />
+			<Innerfunction id="inner3" name="Lagerhaltung" />
+			<Innerfunction id="inner4" name="Impfdokumentation" />
+			<Innerfunction id="inner5" name="Beratungsinhalte" />
+			<Innerfunction id="inner6" name="Authentifizierung" />
+			<Innerfunction id="inner7" name="Dokumente" />
+			<Innerfunction id="inner8" name="Ausbruchswarnungen" />
+			<Innerfunction id="inner9" name="Wiedervorstellung" />
+			<Innerfunction id="inner10" name="Reiseapotheke" />
+			<Innerfunction id="inner11" name="Erstaufnahme" />
+			<Innerfunction id="inner12" name="Impfanamnese" />
+		</Innerfunctions>
+
+		<Outputs>
+			<Description>
+				Die Outputs repräsentieren die dem beratenen Reisenden unmittelbar zugänglich gemachten "Produkte" bzw. "Services", die im Ergebnis des Beratungsvorgangs entstehen. Dazu zählt hier auch die Rechnungslegung.
+			</Description>
+
+			<Output id="out1" name="Report">
+				Der Travel Health Report ist das zentrale Produkt des Beratungsvorgangs. Er fasst die Beratungsinhalte in schriftlicher Form auf zwei DinA4-Seiten zusammen, enthält Informationen zur Impfanamnese, aktuell durchgeführten Impfungen, Empfehlungen zu weiteren reiseassoziiert ausstehenden Impfungen (einschließlich der zeitlichen Mindestabstände) sowie Empfehlungen zu weiteren hausärztlich zu veranlassenden Impfungen, zur Malariachemoprophylaxe, zum Mückenschutz, zur Nahrungsmittelhygiene, zum Reisen mit Vorerkrankungen, besonderen Risikoexpositionen (z.B. Höhe) und anderen reisemedizinisch relevanten Aspekten. Die Konfiguration dieses Reports wird an anderer Stelle im Detail beschrieben.
+			</Output>
+
+			<Output id="out2" name="Rechnung">
+				Ist, was es ist: Alle Funktionen, die eine einfache Aufnahme aller erbrachten Leistungen in eine deutschen Steuervorgaben entsprechende Rechnung ermöglichen sowie eine Dokumentation der erfolgten Zahlungen.
+			</Output>
+
+			<Output id="out3" name="Rezepte">
+				Die Rezeptierung reisemedizinisch relevanter Arzneimittel, das sind im Wesentlichen Präparate zur Malariachemoprophylaxe, Azithromycin als Antibiotikum und Medikamente zur Prophylaxe der Höhenkrankheit. Es können aber weitere Medikamente im Verlauf dazukommen.
+			</Output>
+
+			<Output id="out4" name="Recall">
+				Hier handelt es sich um das Erinnerungsmanagement als Service für die Reisenden. Diese sollen per SMS oder E-Mail an ausstehende Impfungen und Impftermine erinnert werden können.
+			</Output>
+		</Outputs>
+
+		<Cross_sectional>
+			<Backoffice>
+				Für das Backoffice fehlt bis jetzt eine Entscheidung über das zu nutzende Tool (z.B. Google Sheets, Notion, Teil der eigenen GUI, etc.). Die Absicht ist es, auch dem technisch wenig versierten Nutzer die Möglichkeit zu geben, Daten, die die App im Hintergrund verwendet (z.B. Preisliste, Chargennummern und andere Impfstoff-spezifische Daten, Nutzerverwaltung) einfach zu bearbeiten und zu verwenden. Eine Option wären Google Sheets, die im Hintergrund mit der Datenbank der App abgeglichen und synchronisiert wird.
+			</Backoffice>
+
+			<Versionsverwaltung>
+				Es soll ein lokales GIT-Repository und ein Repository auf GitHub angelegt werden. Durch regelmäßige Pushs ins Onlinerepository soll eine angemessene Rückfallebene aufgebaut werden.
+			</Versionsverwaltung>
+
+			<Datenmodell>
+				<Description>
+					Ein Datenmodell als Keimzelle der definitiven Datenbank soll vorab definiert werden und dabei mindestens die folgenden DataFrames enthalten:
+				</Description>
+				<DataFrame>Counselling_Cases</DataFrame>
+				<DataFrame>Travellers</DataFrame>
+				<DataFrame>Travels</DataFrame>
+				<DataFrame>Vaccinations</DataFrame>
+				<DataFrame>Vaccines</DataFrame>
+				<DataFrame>Health_Reports</DataFrame>
+				<DataFrame>Billings</DataFrame>
+				<DataFrame>Controlling</DataFrame>
+				<DataFrame>Stock_Taking</DataFrame>
+				<DataFrame>User_Management</DataFrame>
+				<DataFrame>Repository</DataFrame>
+				<DataFrame>Alerts</DataFrame>
+			</Datenmodell>
+
+			<Internationalisierung>
+				Mehrsprachigkeit der App (zunächst Englisch, Deutsch) via i18n
+			</Internationalisierung>
+		</Cross_sectional>
+	</Functionality>
+
+	<Dateistruktur>
+		Die Dateistruktur ist für mich ein wesentliches Element des gesamten Projekts. Aufgrund des Vibecoding-Ansatzes und der Größe/der Komplexität des Vorhabens fürchte ich, sehr schnell die Übersicht über die Codebase zu verlieren. Alles was das verhindert, wäre hochwillkommen. Als ersten Schritt zur Wiederauffindbarkeit von Funktionalitäten im Code möchte ich, dass die Dateistruktur und die Dateinamen den oben definierten Funktionselementen folgen.
+	</Dateistruktur>
+
+	<Frontend>
+		<Description>
+			Die App ist im Kern eine Single Page Application. Ich möchte dafür ein modernes, React bzw. Next.js basiertes Setup und ein von Googles Material UI inspiriertes Design. Die GUI soll in fünf Teile aufgeteilt werden:
+		</Description>
+
+		<Section id="section1" name="Top App Bar">
+			<Left>Logo + „TraivelNxt"</Left>
+			<Center>Kontext-Leiste: Reisemed. Beratung – Fall #2025-11-001 – Tanzania</Center>
+			<Right>User/Settings/Language-Switch (Deutsch/Englisch)</Right>
+			<Additional>Kontext und Alerts</Additional>
+		</Section>
+
+		<Section id="section2" name="Left Drawer">
+			<Width>280px</Width>
+			<Type>permanent</Type>
+			<Subsection name="Onboarding">
+				<Actions>4 Aktionen: QR, Datei, Manuell, Wiedervorstellung</Actions>
+			</Subsection>
+			<Subsection name="Travellers dieses Falls">
+				<Description>maximal 6 kleine Cards/Chips mit Avatar + Name + Icon für „aktiv"</Description>
+			</Subsection>
+			<Subsection name="Schnellzugriff Administration">
+				<Description>später ausblendbar: Lager, Controlling, Admin</Description>
+			</Subsection>
+		</Section>
+
+		<Section id="section3" name="Main Area">
+			<TabSet>
+				<Tab id="tab1">Impfanamnese</Tab>
+				<Tab id="tab2">Impfdokumentation</Tab>
+				<Tab id="tab3">Beratungsinhalte</Tab>
+				<Tab id="tab4">Reiseapotheke</Tab>
+				<Tab id="tab5">Dokumente</Tab>
+				<Tab id="tab6">Recall</Tab>
+			</TabSet>
+			<ContentPanel>
+				<Description>Content-Panel (SPA-typisch), das dynamisch die Formulare / Tabellen / PDFs zeigt</Description>
+				<Implementation>in Next.js sehr gut mit „client components" + „tab state" machen</Implementation>
+			</ContentPanel>
+		</Section>
+
+		<Section id="section4" name="Right Panel">
+			<Width>320px</Width>
+			<Type>collapsible</Type>
+			<Outputs>
+				<Button>Travel Health Report erstellen</Button>
+				<Button>Rezept(e) erzeugen</Button>
+				<Button>Rechnung erstellen</Button>
+				<Button>Erinnerung planen</Button>
+			</Outputs>
+		</Section>
+
+		<Section id="section5" name="Footer">
+			<Type>optional, nur Desktop-Instanz</Type>
+			<Description>kleine Statuszeile: z.B. „DB: Neon (connected) – Benutzer: Dr. Meyer – Fall geöffnet: 10:42"</Description>
+		</Section>
+	</Frontend>
+
+	<User_Journey_Authentication>
+		<GUI>Erfolgt in eigener Eingabemaske/Startbildschirm</GUI>
+		<Schnittstellen>Backoffice, Datenbank</Schnittstellen>
+		<Funktionalitaet>
+			<Function id="auth1">
+				<Name>Anlegen von Mitarbeiteraccounts</Name>
+				<Description>Neue Mitarbeiter sollen mit ihren selbstgewählten Login-Daten (E-Mail Adresse und Passwort) angelegt, bearbeitet und gelöscht werden können.</Description>
+			</Function>
+			<Function id="auth2">
+				<Name>Einloggen</Name>
+				<Description>Zum Schichtbeginn soll der/die Beratende sich mit diesen angelegten Login-Daten bei System anmelden (müssen) und dieses danach benutzen können.</Description>
+			</Function>
+			<Function id="auth3">
+				<Name>Nutzergruppen</Name>
+				<Description>Nutzergruppen mit unterschiedlichen Berechtigungen sollen in einem späteren Entwicklungsschritt eingeführt werden.</Description>
+			</Function>
+		</Funktionalitaet>
+	</User_Journey_Authentication>
+
+	<User_Journey_Onboarding>
+		<GUI>Mainscreen, Frame 2</GUI>
+		<Schnittstellen>Datenbank</Schnittstellen>
+		<Funktionalitaet>
+			<Function id="onboard1">
+				<Name>Reisendendaten anlegen/einlesen</Name>
+				<Description>
+					Beim Anlegen eines neuen Reisenden sollen drei Optionen zur Verfügung stehen:
+				</Description>
+				<Option id="option1">
+					<Name>QR-Code Variante</Name>
+					<GUI>Frame 2.1</GUI>
+					<Description>
+						Als Standardvariante das Einlesen zweier zuvor vom Reisenden erstellten QR-Codes. Der eine QR-Code enthält die persönlichen Daten des Reisenden sowie die reiseassoziierten Daten (Reiseziel, Reisedauer, Reisezweck, etc.) und der andere QR-Code die relevanten Gesundheitsinformationen (Past Medical History, Immunsuppression, etc.)
+					</Description>
+				</Option>
+				<Option id="option2">
+					<Name>Manuelle Eingabe</Name>
+					<GUI>Frame 2.3</GUI>
+					<Description>
+						Falls ein Reisender keine QR-Codes generiert haben sollte, können die oben genannten Daten als Rückfallposition auch von Hand eingegeben werden
+					</Description>
+				</Option>
+				<Option id="option3">
+					<Name>Wiedervorstellung</Name>
+					<GUI>Frame 2.2</GUI>
+					<Description>
+						Die dritte Option wäre das Einlesen der Daten eines Reisenden aus der Datenbank, sofern es bereits in der Vergangenheit Vorstellungen gegeben hat. In diesem Fall muss eine Auswahl erfolgen, ob sich die Wiedervorstellung auf die gleiche Reise oder eine neue bezieht.
+					</Description>
+				</Option>
+			</Function>
+
+			<Function id="onboard2">
+				<Name>Bearbeiten der angelegten oder eingelesenen Daten</Name>
+				<GUI>Frame 3.0</GUI>
+				<Description>
+					In jeder der drei oben genannte Varianten soll es die Möglichkeit geben, die eingelesenen bzw. angelegten Daten frei zu bearbeiten und die Änderungen abzuspeichern.
+				</Description>
+			</Function>
+
+			<Function id="onboard3">
+				<Name>Speichern in eine PostgreSQL Datenbank</Name>
+				<GUI>Frame 3.0</GUI>
+				<Description>
+					Sämtliche angelegte/eingelesene Daten sollen bei Druck auf das "Speichern"-Button in der PostgreSQL gespeichert werden. Für das MVP reicht es aber evtl. zunächst aus, die Daten lokal zu speichern.
+				</Description>
+			</Function>
+		</Funktionalitaet>
+	</User_Journey_Onboarding>
+
+	<User_Journey_Beratungsablauf>
+		<GUI>Mainscreen, Frame 3</GUI>
+		<Schnittstellen>Datenbank</Schnittstellen>
+		<Funktionalitaeten>
+			<Part id="part1" name="Erheben der Impfanamnese">
+				<GUI>Frame 3.1</GUI>
+				<Description>
+					Das Erheben der Impfanamnese ist ein Teil der Core Functionality der App. Ich habe die Funktionalität bereits ausgearbeitet (siehe anliegende Files). Aufgrund der Wichtigkeit dieser Funktionalität, möchte ich dafür verschiedene UI/UX-Mockups erstellen und wähle dann in einem späteren Schritt, die bevorzugte Variante.
+				</Description>
+			</Part>
+
+			<Part id="part2" name="Impfdokumentation">
+				<GUI>Frame 3.2</GUI>
+				<Tasks>
+					<Task>Einscannen der zu verimpfenden Impfstoffe</Task>
+					<Task>
+						Im Rahmen der Impfdokumentation sollen die QR-Codes der applizierten Impfstoffe eingelesen und folgende Daten ins Impfdokumentations-DataFrame der PostgreSQL Datenbank eingetragen werden: Impfdatum, Name des verimpfenden Arztes (= derjenige, der eingeloggt ist), die automatisch aus der im QR-Code enthaltenen Zeichenfolge extrahierte Chargennummer des Impfstoffs, der anhand der Chargennummer zu ermittelnde Name des Impfstoffs.
+					</Task>
+					<Task>Impfdokumentation = Abspeichern im "Impfungen"-DataFrame der Datenbank</Task>
+					<Task>Ermittlung des Preises aus dem Vaccine-DataFrame der Datenbank</Task>
+					<Task>Einfügen in den Rechnungsentwurf des Accounting-DataFrame der Datenbank</Task>
+					<Task>Einfügen in den Entwurf des Travel Health Reports</Task>
+				</Tasks>
+			</Part>
+
+			<Part id="part3" name="Zusammenstellen reisemedizinisch relevanter Empfehlungen">
+				<GUI>Frame 3.3</GUI>
+				<Topics>
+					<Topic>Mückenschutz</Topic>
+					<Topic>Nahrungsmittelhygiene</Topic>
+					<Topic>Reisekrankenversicherung</Topic>
+					<Topic>Thromboseprophylaxe</Topic>
+					<Topic>Reisen mit Vorerkrankungen</Topic>
+					<Topic>Reiseapotheke</Topic>
+					<Topic>spezifischen Risikoexpositionen (z.B. Höhenkrankheit)</Topic>
+				</Topics>
+			</Part>
+
+			<Part id="part4" name="Rezeptierung">
+				<GUI>Frame 3.4</GUI>
+				<Tasks>
+					<Task>Rezeptierung Malariachemoprophylaxe</Task>
+					<Task>Rezeptierung anderer reisemedizinisch indizierter Medikamente</Task>
+					<Task>
+						Möglichkeit der Speicherung (BUTTON) des Entwurfs des Rezepts / der Rezepte (spezifisch für jeden Reisenden) im reisespezifischen Repository (enthält die Rezepte aller Reisenden einer Reise) und/oder des direkten Ausdrucks (BUTTON) der Rezepte.
+					</Task>
+				</Tasks>
+				<Reference>siehe exemplarisch anliegendes Pythonfile (Path)</Reference>
+			</Part>
+
+			<Part id="part5" name="Travel Health Report">
+				<GUI>Frame 3.5</GUI>
+				<Tasks>
+					<Task>
+						Endbearbeitung der Entwurfsversion des auf der Basis der vorangegangenen Schritte im Entwurf vorgefertigten individuellen Travel Health Report (spezifisch für jeden Reisenden).
+					</Task>
+					<Task>
+						Möglichkeit der Speicherung (BUTTON) des Entwurfs im reisespezifischen Repository (enthält die Berichte aller Reisenden einer Reise) und/oder des direkten Ausdrucks des Reports (BUTTON).
+					</Task>
+				</Tasks>
+			</Part>
+
+			<Part id="part6" name="Rechnung">
+				<GUI>Frame 3.6</GUI>
+				<Tasks>
+					<Task>
+						Endbearbeitung der Entwurfsversion der (auf der Basis der vorangegangenen Schritte im Entwurf vorgefertigten) individuellen Rechnung (spezifisch für jeden Reisenden).
+					</Task>
+					<Task>
+						Möglichkeit der Speicherung (BUTTON) des Entwurfs im reisespezifischen Repository (enthält die Rechnungen aller Reisenden einer Reise) und/oder des direkten Ausdrucks der Rechnung (BUTTON).
+					</Task>
+				</Tasks>
+			</Part>
+		</Funktionalitaeten>
+	</User_Journey_Beratungsablauf>
+
+	<User_Journey_Roadmap>
+		<Journey id="ex1">Health Alerts</Journey>
+		<Journey id="ex2">Controlling</Journey>
+		<Journey id="ex3">Lagerhaltung</Journey>
+		<Journey id="ex4">Administration</Journey>
+		<Journey id="ex5">Travel Health Science</Journey>
+		<Journey id="ex6">Intra-Travel Support</Journey>
+		<Journey id="ex7">Post-Travel Review</Journey>
+	</User_Journey_Roadmap>
+</WebApp_Tropeninstitut>
