@@ -1,0 +1,522 @@
+{
+  "vaccinations": [
+    {
+      "name": "Tetanus",
+      "scheme": "1 Injektion (nach abgeschlossener Grundimmunisierung)",
+      "booster": "10 Jahre",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Imfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Grundimmu erinnerlich": [
+          "Es liegt zwar kein Impfnachweis vor, es wird aber mit großer Sicherheit erinnert, dass in der Vergangenheit eine vollständige Grundimmunisierung stattgefunden hat.",
+          "*"
+        ],
+        "1 reguläre Impfdosis": [
+          "Es liegt ein Impfnachweis für lediglich eine reguläre Impfdosis vor.",
+          "Es kann nicht von belastbarem Impfschutz ausgegangen werden."
+        ],
+        "2 reguläre Impfdosen": [
+          "Es liegen Impfnachweise für lediglich zwei reguläre Impfdosen vor.",
+          "*"
+        ],
+        "≥ 3 reguläre Impfdosen": [
+          "Es liegt der Nachweis einer vollständigen Grundimmunierung vor.",
+          "*"
+        ]
+      }
+    },
+    {
+      "name": "Diphtherie",
+      "scheme": "1 Injektion (nach abgeschlossener Grundimmunisierung)",
+      "booster": "10 Jahre",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Imfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Grundimmu erinnerlich": [
+          "Es liegt zwar kein Impfnachweis vor, es wird aber mit großer Sicherheit erinnert, dass in der Vergangenheit eine vollständige Grundimmunisierung stattgefunden hat.",
+          "*"
+        ],
+        "1 reguläre Impfdosis": [
+          "Es liegt ein Impfnachweis für lediglich eine reguläre Impfdosis vor.",
+          "Es kann nicht von belastbarem Impfschutz ausgegangen werden."
+        ],
+        "2 reguläre Impfdosen": [
+          "Es liegen Impfnachweise für lediglich zwei reguläre Impfdosen vor.",
+          "*"
+        ],
+        "≥ 3 reguläre Impfdosen": [
+          "Es liegt der Nachweis einer vollständigen Grundimmunierung vor.",
+          "*"
+        ]
+      }
+    },
+    {
+      "name": "Pertussis",
+      "scheme": "1 Injektion (nach abgeschlossener Grundimmunisierung)",
+      "booster": "10 Jahre",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Imfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Grundimmu erinnerlich": [
+          "Es liegt zwar kein Impfnachweis vor, es wird aber mit großer Sicherheit erinnert, dass in der Vergangenheit eine vollständige Grundimmunisierung stattgefunden hat.",
+          "*"
+        ],
+        "1 reguläre Impfdosis": [
+          "Es liegt ein Impfnachweis für lediglich eine reguläre Impfdosis vor.",
+          "Es kann nicht von belastbarem Impfschutz ausgegangen werden."
+        ],
+        "2 reguläre Impfdosen": [
+          "Es liegen Impfnachweise für lediglich zwei reguläre Impfdosen vor.",
+          "*"
+        ],
+        "≥ 3 reguläre Impfdosen": [
+          "Es liegt der Nachweis einer vollständigen Grundimmunierung vor.",
+          "*"
+        ]
+      }
+    },
+    {
+      "name": "Polio",
+      "scheme": "1 Injektion (nach abgeschlossener Grundimmunisierung und bei Reisen in Endemiegebiete. Bei Ausreise aus bestimmten Ländern ist nach Langzeitaufenthalt eine frische Polio-Impfung (1 Monat – 1 Jahr alt) nachzuweisen)",
+      "booster": "10 Jahre",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Imfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Grundimmu erinnerlich": [
+          "Es liegt zwar kein Impfnachweis vor, es wird aber mit großer Sicherheit erinnert, dass in der Vergangenheit eine vollständige Grundimmunisierung stattgefunden hat.",
+          "*"
+        ],
+        "1 reguläre Impfdosis": [
+          "Es liegt ein Impfnachweis für lediglich eine reguläre Impfdosis vor.",
+          "Es kann nicht von belastbarem Impfschutz ausgegangen werden."
+        ],
+        "2 reguläre Impfdosen": [
+          "Es liegen Impfnachweise für lediglich zwei reguläre Impfdosen vor.",
+          "*"
+        ],
+        "≥ 3 reguläre Impfdosen": [
+          "Es liegt der Nachweis einer vollständigen Grundimmunierung vor.",
+          "*"
+        ]
+      }
+    },
+    {
+      "name": "Masern/ Mumps/ Röteln",
+      "scheme": "2 Injektionen (je nach Lebensalter, Vorimpfungen und Vorgaben)",
+      "booster": "lebenslang",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Impfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Immmunisierung erinnert": [
+          "Es liegt zwar kein Impfnachweis vor, es wird aber mit großer Sicherheit erinnert, dass in der Vergangenheit eine vollständige Grundimmunisierung stattgefunden hat.",
+          "Es kann von lebenslangem Impfschutz ausgegangen werden; wenn Unsicherheit besteht, könnte eine Antikörpertestung Klarheit bringen."
+        ],
+        "1 Impfdosis als Kind": [
+          "Es liegt lediglich eine Impfung im Kindesalter vor.",
+          "Es sollte eine zweite MMR-Impfung nachgeholt werden."
+        ],
+        "2 Impfdosen (MMR/MMR-V):": [
+          "Es liegen zwei MMR-Impfungen vor.",
+          "Es kann von lebenslangem Impfschutz ausgegangen werden."
+        ],
+        "MMR + monovalent Masern": [
+          "Es liegt eine MMR plus eine monovalente Masernimpfung vor.",
+          "Dies entspricht einem ausreichenden Schutz gegen Masern; Mumps/Röteln-Schutz nach Impfanamnese beurteilen."
+        ]
+      }
+    },
+    {
+      "name": "Hepatitis B",
+      "scheme": "3 Injektionen – Monat 0/ ≥1 / ≥6; bei hohem Risiko und Grundimmunisierung im Kleinkindesalter ggf. einmalige Auffrischung",
+      "booster": "lebenslang",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Imfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "1 reg. Engerix-Äquiv.": [
+          "Es liegt nur eine reguläre Hepatitis-B-Impfung vor.",
+          "Es kann nicht von belastbarem Impfschutz ausgegangen werden."
+        ],
+        "2 reg. Engerix-Äquiv.": [
+          "Es liegen zwei reguläre Dosen vor.",
+          "*"
+        ],
+        "≥ 3 reg. Engerix-Äquiv.": [
+          "Es liegt der Nachweis einer vollständigen Grundimmunisierung vor.",
+          "*"
+        ],
+        "Grundimmu erinnerlich": [
+          "Es liegt zwar kein Impfnachweis vor, es wird aber mit großer Sicherheit erinnert, dass in der Vergangenheit eine vollständige Grundimmunisierung stattgefunden hat.",
+          "*"
+        ],
+        "Twinrix-Konstellation": [
+          "Es liegt eine Kombinationsimpfung vor.",
+          "Die Beurteilung erfolgt analog zur Anzahl der HepA/HepB-Äquivalente."
+        ]
+      }
+    },
+    {
+      "name": "Hepatitis A",
+      "scheme": "2 Injektionen – Monat 0 und ≥6–18, je nach Impfstoff. Nach 1 Impfung: Kurzzeitschutz 1–2 Jahre.",
+      "booster": "ca. 25 Jahre",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Imfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Grundimmu erinnerlich": [
+          "Es liegt zwar kein Impfnachweis vor, es wird aber mit großer Sicherheit erinnert, dass in der Vergangenheit eine vollständige Grundimmunisierung stattgefunden hat.",
+          "*"
+        ],
+        "1 reg. Havrix-Äquiv.": [
+          "Es liegt ein Impfnachweis für lediglich eine reguläre Impfdosis vor.",
+          "*"
+        ],
+        "2 reg. Havrix-Äquiv.": [
+          "Es liegt der Nachweis einer vollständigen Grundimmunisierung vor.",
+          "*"
+        ],
+        "1 reg. Twinrix-Äquiv.": [
+          "Es liegt ein Impfnachweis für lediglich eine reguläre Impfdosis vor.",
+          "Es kann noch nicht von belastbarem Impfschutz ausgegangen werden."
+        ],
+        "2 reg. Twinrix-Äquiv.": [
+          "Es liegen Impfnachweise für lediglich zwei reguläre Impfdosen vor.",
+          "*"
+        ],
+        "≥ 3 reg. Twinrix-Äquiv.": [
+          "Es liegt der Nachweis einer vollständigen Grundimmunisierung vor.",
+          "*"
+        ],
+        "Havrix-->Twinrix Konstell.": [
+          "Es liegt der Nachweis einer vollständigen Grundimmunisierung vor.",
+          "*"
+        ],
+        "Twinrix-->Havrix Konstell.": [
+          "Es liegt noch keine vollständige Grundimmunierung vor.",
+          "*"
+        ]
+      }
+    },
+    {
+      "name": "Typhus",
+      "scheme": "1 Injektion oder Schluckimpfung (je 1 Kapsel Tag 1/ 3/ 5)",
+      "booster": "3 Jahre",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Impfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "1 Dosis i.m.": [
+          "Es liegt eine i.m.-Impfung gegen Typhus vor.",
+          "Es besteht Schutz für ca. 3 Jahre."
+        ],
+        "Schluckimpfung (1/3/5)": [
+          "Es liegt eine orale Typhusimpfung (Kapseln Tag 1/3/5) vor.",
+          "Es besteht Schutz für ca. 1–3 Jahre, je nach Präparat."
+        ]
+      }
+    },
+    {
+      "name": "Gelbfieber",
+      "scheme": "1 Injektion, weitere Impfung nach ≥10 Jahren (STIKO). Ausnahmen: Kinder <2 Jahre, Schwangere, Immundefizienz, Wiederimpfung ggf. früher.",
+      "booster": "Booster einmalig, meist nach ≥10 Jahren",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Impfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "1 dokumentierte Impfung": [
+          "Es liegt eine dokumentierte Gelbfieberimpfung vor.",
+          "In der Regel besteht lebenslanger Impfschutz, aber Einreisebestimmungen können trotzdem eine Auffrischung verlangen."
+        ],
+        "Booster indiziert": [
+          "Es liegen besondere Konstellationen vor (frühe Impfung, Immunsuppression, Schwangerschaft, kleine Kinder).",
+          "In diesen Fällen kann eine Auffrischimpfung nach 10 Jahren sinnvoll sein."
+        ]
+      }
+    },
+    {
+      "name": "Dengue-Fieber",
+      "scheme": "2 Injektionen im Abstand von 2–3 Monaten. Empfohlen nur nach durchgemachter Dengue-Infektion.",
+      "booster": "aktuell keine Informationen",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Impfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "1 Dosis": [
+          "Es liegt nur eine Dosis vor.",
+          "Es liegt noch keine vollständige Grundimmunisierung vor."
+        ],
+        "2 Dosen": [
+          "Es liegen zwei Dosen vor.",
+          "Es kann von Impfschutz nach aktuellem Schema ausgegangen werden."
+        ],
+        "Infektion nicht gesichert": [
+          "Die vorausgesetzte natürliche Dengue-Infektion ist nicht sicher dokumentiert.",
+          "Die Indikation zur Impfung sollte kritisch überprüft werden."
+        ]
+      }
+    },
+    {
+      "name": "Tollwut",
+      "scheme": "2 Injektionen vor der Reise – Tag 0/ 7 (Immunkompetenz) ggf. 3. Injektion; nach Biss: zusätzliche Nachimpfungen Tag 0 + 3*",
+      "booster": "kein regulärer Booster",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Impfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Präexpositionsschema unvollständig": [
+          "Es liegt nur 1 (oder 2 ohne ausreichenden Abstand) präexpositionelle Impfung(en) vor.",
+          "Es besteht kein sicherer Schutz, Schema sollte komplettiert werden."
+        ],
+        "Präexpositionsschema komplett": [
+          "Es liegen 2 (neuere Schemata) bzw. 3 Impfungen im richtigen Abstand vor.",
+          "Es besteht Grundschutz; Auffrischung nur bei Exposition oder Risikoberufen."
+        ],
+        "Postexpositionsschema": [
+          "Es liegen Impfungen nach Exposition vor.",
+          "Weiteres Vorgehen nach aktuellem Tollwut-PEP-Schema beurteilen."
+        ]
+      }
+    },
+    {
+      "name": "Japanische Enzephalitis",
+      "scheme": "2 Injektionen – Tag 0/ ≥7 (ab 18 J.) oder Tag 0/ ≥28 (<18 J.)",
+      "booster": "1–2 Jahre, nach Booster 10 Jahre",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Impfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "1 Dosis": [
+          "Es liegt nur eine Dosis vor.",
+          "Es kann noch nicht von belastbarem Impfschutz ausgegangen werden."
+        ],
+        "2 Dosen": [
+          "Es liegen zwei Impfungen nach Schema vor.",
+          "Es besteht Impfschutz, Auffrischung nach 1–2 Jahren."
+        ],
+        "Booster erhalten": [
+          "Es liegt eine Auffrischimpfung vor.",
+          "Dann Schutz bis zu 10 Jahren."
+        ]
+      }
+    },
+    {
+      "name": "Meningokokken ACWY",
+      "scheme": "1 Injektion",
+      "booster": "ca. 5 Jahre",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Impfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "1 Dosis": [
+          "Es liegt eine dokumentierte Impfung gegen Meningokokken ACWY vor.",
+          "Schutz besteht für ca. 5 Jahre."
+        ],
+        "Booster fällig": [
+          "Die Impfung liegt länger als 5 Jahre zurück bzw. es liegen Risikokonstellationen vor.",
+          "Eine Auffrischimpfung ist zu empfehlen."
+        ]
+      }
+    },
+    {
+      "name": "FSME",
+      "scheme": "3 Injektionen – Monat 0/ ≥1/ ≥9; nach 1 Impfung: Kurzzeitschutz 1–2 Jahre.",
+      "booster": "3–5 Jahre",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Impfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "1 Dosis": [
+          "Es liegt nur eine FSME-Impfung vor.",
+          "Es besteht nur ein Kurzzeitschutz und auch nur eingeschränkt."
+        ],
+        "2 Dosen": [
+          "Es liegen 2 FSME-Impfungen vor.",
+          "Schema sollte zur Langzeitimmunität komplettiert werden."
+        ],
+        "3 Dosen (vollständig)": [
+          "Es liegt eine vollständige Grundimmunisierung vor.",
+          "Auffrischung alle 3–5 Jahre, je nach Alter."
+        ]
+      }
+    },
+    {
+      "name": "Grippe (Influenza)",
+      "scheme": "1 Injektion, ab 60 Jahren mit Hochdosis-Impfstoff",
+      "booster": "1 Jahr",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Impfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Impfung aktuelle Saison": [
+          "Es liegt eine aktuelle saisonale Influenzaimpfung vor.",
+          "Es besteht Impfschutz für die laufende Saison."
+        ],
+        "Impfung Vorjahre": [
+          "Es liegen nur ältere Influenzaimpfungen vor.",
+          "Es sollte jährlich aufgefrischt werden."
+        ]
+      }
+    },
+    {
+      "name": "Pneumokokken",
+      "scheme": "1 Injektion ab 60 Jahren und bei chronischen Vorerkrankungen",
+      "booster": "kein regelmäßiger Booster",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Impfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "1 Impfung (PPSV23 oder PCV13/15/20)": [
+          "Es liegt eine Pneumokokkenimpfung vor.",
+          "Je nach Alter und Grunderkrankung kann ein sequenzielles Schema nötig sein."
+        ],
+        "Sequenzimpfung erforderlich": [
+          "Es liegt nur ein Teil der empfohlenen Sequenzimpfung vor.",
+          "Der zweite Impfstoff sollte nachgeholt werden."
+        ]
+      }
+    },
+    {
+      "name": "Gürtelrose (Herpes Zoster)",
+      "scheme": "2 Injektionen – Monat 0/ ≥2",
+      "booster": "kein regulärer Booster",
+      "history_logic": "LOGIK_NICHT_DEFINIERT_IM_IMPORT"
+    },
+    {
+      "name": "Chikungunya",
+      "scheme": "1 Injektion",
+      "booster": "aktuell keine Informationen",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Impfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "1 Dosis": [
+          "Es liegt eine Impfung gegen Chikungunya vor.",
+          "Es wird von Impfschutz ausgegangen, solange keine neuen Empfehlungen vorliegen."
+        ]
+      }
+    },
+    {
+      "name": "COVID-19",
+      "scheme": "mindestens 3 Antigenkontakte (Erkrankung und/ oder Impfung, davon mindestens 1 Impfung)",
+      "booster": "jährlicher Booster ab 60 oder Risiko",
+      "history_logic": {
+        "Keine Info": [
+          "Die notwendigen Impfinformationen konnten nicht erhoben werden.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "Keine Impfung": [
+          "Es sind keine Impfungen dokumentiert.",
+          "Es kann nicht von Impfschutz ausgegangen werden."
+        ],
+        "1 reguläre Impfdosis": [
+          "Es liegt nur eine COVID-19-Impfung vor.",
+          "Es kann nicht von belastbarem Impfschutz ausgegangen werden."
+        ],
+        "2 reguläre Impfdosen": [
+          "Es liegen 2 COVID-19-Impfungen vor.",
+          "Es sollte eine weitere Antigenexposition (Impfung oder Infektion) erfolgen."
+        ],
+        "≥ 3 reguläre Impfdosen": [
+          "Es liegt der Nachweis einer vollständigen Grundimmunierung und mindestens einer Boosterdosis vor.",
+          "Der relative Immunschutz ist aber nicht nur von der Anzahl, sondern auch vom Abstand zur letzten Dosis, von der COVID-19-Anamnese und vom Alter abhängig."
+        ]
+      }
+    },
+    {
+      "name": "RSV",
+      "scheme": "1 Injektion ab 75 Jahren bzw. ab 60 Jahren bei relevanten Vorerkrankungen bzw. Risiko",
+      "booster": "kein regelmäßiger Booster",
+      "history_logic": "LOGIK_NICHT_DEFINIERT_IM_IMPORT"
+    }
+  ]
+}
