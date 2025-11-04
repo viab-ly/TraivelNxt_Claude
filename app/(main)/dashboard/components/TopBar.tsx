@@ -32,7 +32,7 @@ import { useState } from 'react';
 // i18n preparation
 const t = {
   de: {
-    appName: 'TraivelNxt',
+    appName: 'Traivel Tropeninstitut München',
     context: 'Reisemed. Beratung – Fall #2025-11-001 – Tanzania',
     language: 'Sprache',
   },

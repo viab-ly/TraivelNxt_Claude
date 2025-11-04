@@ -1,0 +1,52 @@
+[
+  {
+    "qr": "0104150102594955219564715271801726093010LL9242",
+    "gtin": "010415010259495521956471527180",
+    "batch": "LL9242",
+    "expiry": "2609",
+    "product_name": "FSME-Immun",
+    "vaccine_type": "FSME",
+    "price_eur": "23,12",
+    "image": "FSME-Immun.jpg"
+  },
+  {
+    "qr": "01041500892642921727013110AHABB478AE215A0Y685K4F",
+    "gtin": "01041500892642921727013110AHABB478AE",
+    "batch": "AHABB478AE",
+    "expiry": "2701",
+    "product_name": "Twinrix",
+    "vaccine_type": "Hepatitis A/B",
+    "price_eur": "76,44",
+    "image": "Twinrix.jpg"
+  },
+  {
+    "qr": "01041500686485941726013110X1A074M21120E490NE0A2T9",
+    "gtin": "01041500686485941726013110X1A074M",
+    "batch": "X1A074M",
+    "expiry": "2601",
+    "product_name": "Verorab",
+    "vaccine_type": "Tollwut",
+    "price_eur": "93,14",
+    "image": "Verorab.jpg"
+  },
+  {
+    "qr": "01041500686485941726083110X1C111M29021120C4F69FW44W3",
+    "gtin": "01041500686485941726083110X1C111M",
+    "batch": "X1C111M",
+    "expiry": "2608",
+    "product_name": "Verorab",
+    "vaccine_type": "Tollwut",
+    "price_eur": "93,14",
+    "image": "Verorab.jpg"
+  },
+  {
+    "qr": "01041500922349231725123110AMVB017A215T5DGDRMT1",
+    "gtin": "01041500922349231725123110AMVB017A",
+    "batch": "AMVB017A",
+    "expiry": "2512",
+    "product_name": "Menveo",
+    "vaccine_type": "Meningitis ACWY",
+    "price_eur": "75,11",
+    "image": "Menveo.jpg"
+  }
+]

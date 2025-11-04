@@ -21,7 +21,7 @@ import {
 const t = {
   de: {
     database: 'DB: Neon',
-    connected: 'verbunden',
+    connected: 'nicht verbunden',
     user: 'Benutzer',
     caseOpened: 'Fall geöffnet',
   },
@@ -38,8 +38,8 @@ const lang = 'de';
 // Mock data
 const statusData = {
   dbConnected: true,
-  userName: 'Dr. Meyer',
-  caseOpenedTime: '10:42',
+  userName: 'Christian Janke',
+  caseOpenedTime: '15:04',
 };
 
 export default function FooterStatus() {
