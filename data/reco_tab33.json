@@ -1,0 +1,135 @@
+[
+  {
+    "id": "malaria.prophylaxe.ap",
+    "group": "A",
+    "kind": "radio",
+    "radioGroupId": "A",
+    "title": "Prophylaxe mit Atovaquon/Proguanil 250mg/100mg (Malarone oder Generika)",
+    "explanation": "Eine Tablette pro Tag mit etwas Fett (z. B. Milch oder Joghurt) einnehmen. Beginn einen Tag vor Einreise ins Endemiegebiet, während des gesamten Aufenthalts und sieben Tage nach Verlassen des Gebiets."
+  },
+  {
+    "id": "malaria.prophylaxe.doxy",
+    "group": "A",
+    "kind": "radio",
+    "radioGroupId": "A",
+    "title": "Prophylaxe mit Doxycyclin Monohydrat 100mg (in Deutschland 'off-label-use')",
+    "explanation": "Eine Tablette pro Tag zum Essen einnehmen. Beginn einen Tag vor Einreise ins Endemiegebiet, während des gesamten Aufenthalts und vier Wochen nach Verlassen des Gebiets."
+  },
+  {
+    "id": "malaria.prophylaxe.mefloquin",
+    "group": "A",
+    "kind": "radio",
+    "radioGroupId": "A",
+    "title": "Prophylaxe mit Mefloquin 250mg (z. B. Lariam)",
+    "explanation": "Eine Tablette pro Woche einnehmen. Beginn ein bis zwei Wochen vor Einreise ins Endemiegebiet, wöchentlich während des Aufenthalts und vier Wochen nach Verlassen des Gebiets."
+  },
+  {
+    "id": "malaria.notfall.ap",
+    "group": "A",
+    "kind": "radio",
+    "radioGroupId": "B",
+    "title": "Notfallmäßige Selbstbehandlung mit Atovaquon/Proguanil 250mg/100mg (Malarone oder Generika)",
+    "explanation": "Je vier Tabletten pro Tag als Einzeldosis für drei Tage (insgesamt 12 Tabletten). Nur bei Fieber ohne Möglichkeit ärztlicher Diagnostik innerhalb von 24 Stunden."
+  },
+  {
+    "id": "malaria.notfall.artemether",
+    "group": "A",
+    "kind": "radio",
+    "radioGroupId": "B",
+    "title": "Notfallmäßige Selbstbehandlung mit Artemether/Lumefantrin (z. B. Riamet)",
+    "explanation": "Beginn mit vier Tabletten, dann nach 8, 24, 36, 48 und 60 Stunden jeweils vier weitere Tabletten (insgesamt 24 Tabletten)."
+  },
+  {
+    "id": "muecke.fieber",
+    "group": "B",
+    "kind": "checkbox",
+    "title": "Viele durch Mückenstiche übertragene Erkrankungen verursachen Fieber.",
+    "explanation": "Fieber in den Tropen immer ernst nehmen. Ab 38 °C Körpertemperatur umgehend medizinische Hilfe aufsuchen, auch wenn die Reise bereits beendet ist."
+  },
+  {
+    "id": "muecke.kleidung",
+    "group": "B",
+    "kind": "checkbox",
+    "title": "Geeignete und speziell präparierte Kleidung",
+    "explanation": "Helle, langärmelige, luftige Kleidung tragen. Imprägnierung der Kleidung mit Permethrin (z. B. NOBITE® Kleidung) bietet zusätzlichen Schutz."
+  },
+  {
+    "id": "muecke.haut.erwachsene",
+    "group": "B",
+    "kind": "radio",
+    "radioGroupId": "C",
+    "title": "Mückenschutz für die Haut (Erwachsene)",
+    "explanation": "DEET 30–50 % auf unbedeckte Hautstellen auftragen. Nach Sonnenschutz auftragen. Alle 8 Stunden oder nach dem Baden erneuern."
+  },
+  {
+    "id": "muecke.haut.kinder",
+    "group": "B",
+    "kind": "radio",
+    "radioGroupId": "C",
+    "title": "Mückenschutz für die Haut (Kinder)",
+    "explanation": "Icaridin oder IR3535 je nach Alter verwenden. Mindestens alle 8 Stunden oder nach dem Baden erneuern. Produkte ab 2 Jahren verwenden."
+  },
+  {
+    "id": "muecke.netze",
+    "group": "B",
+    "kind": "checkbox",
+    "title": "Moskitonetze sind v. a. in Malariagebieten essentiell",
+    "explanation": "Netz unter die Matratze stecken und auf Löcher prüfen. Imprägnierung mit Permethrin erhöht den Schutz deutlich."
+  },
+  {
+    "id": "nahrung.cook",
+    "group": "C",
+    "kind": "checkbox",
+    "title": "Cook it, peel it, boil it or forget it.",
+    "explanation": "Nur durchgegarte Speisen und geschältes Obst verzehren. Rohe oder halbgare tierische Produkte meiden."
+  },
+  {
+    "id": "nahrung.wasser",
+    "group": "C",
+    "kind": "checkbox",
+    "title": "Trinkwasserhygiene",
+    "explanation": "Nur abgefülltes Wasser aus versiegelten Flaschen trinken. Leitungswasser abkochen oder chemisch desinfizieren. Eiswürfel meiden."
+  },
+  {
+    "id": "nahrung.kritisch",
+    "group": "C",
+    "kind": "checkbox",
+    "title": "Kritische Lebensmittel",
+    "explanation": "Salate, rohes Gemüse, Mayonnaise, Softeis und offene Buffets meiden. Vorsicht bei Meeresfrüchten und nicht durchgegartem Fleisch."
+  },
+  {
+    "id": "sonst.bisse",
+    "group": "D",
+    "kind": "checkbox",
+    "title": "Verhalten bei Säugetierbissen",
+    "explanation": "Wunde sofort gründlich mit Seife und Wasser auswaschen. Umgehend ärztliche Hilfe aufsuchen wegen Tollwut- und Infektionsrisiko."
+  },
+  {
+    "id": "sonst.sonne",
+    "group": "D",
+    "kind": "checkbox",
+    "title": "Konsequenter Sonnenschutz",
+    "explanation": "Sonnencreme mit LSF 30–50 verwenden. Zuerst Sonnenschutz, dann Repellent auftragen. Kopfbedeckung und Sonnenbrille tragen. Mittagssonne meiden."
+  },
+  {
+    "id": "sonst.hoehe",
+    "group": "D",
+    "kind": "checkbox",
+    "title": "Verhalten in Höhen über 3500 m (Prävention der Höhenkrankheit)",
+    "explanation": "Langsame Akklimatisierung einplanen. Nicht mehr als 300-500 Höhenmeter pro Tag aufsteigen. Ausreichend trinken. Bei Symptomen absteigen."
+  },
+  {
+    "id": "sonst.vorerkrank",
+    "group": "D",
+    "kind": "checkbox",
+    "title": "Reisen mit Vorerkrankungen",
+    "explanation": "Medikamente in ausreichender Menge mitnehmen. Arztbrief in Englisch mitführen. Notfallkontakte und Versicherungsdaten griffbereit haben."
+  },
+  {
+    "id": "sonst.versicherung",
+    "group": "D",
+    "kind": "checkbox",
+    "title": "Reisekranken- und Reiseabbruchversicherung",
+    "explanation": "Auslandskrankenversicherung mit Rücktransport abschließen. Reiseabbruchversicherung je nach Reisewert erwägen. Versicherungsunterlagen mitführen."
+  }
+]
